@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.5s;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+    
+}
+
+#banner {
+    background-image: url('https://w0.peakpx.com/wallpaper/593/246/HD-wallpaper-red-is-the-new-colour-batman-the-batman-batman-superheroes-movies-2022-movies-artstation.jpg');
+    background-position: 50% 30%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+
+}
+
+#titulo-coments {
+    width: auto;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+    }
+    
+    span {
+        color: #fff;
+        font-family: 'kdam Thmor Pro', sans-serif;
+    }
+    
+    .footer-navigation {
+        display: none;
+    }
+    
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    :root {
+        view-transition-name: root;
+    }
+
+    html {
+        display: block;
+    }
+
+    head {
+        display: none;
+    }
+
+    .box-comentarios {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 30px;
+        margin-top: 50px;
+        margin-left: 100px;
+        width: 85%;
+    }
+
+    .card {
+        width: 100%;
+        height: 320PX;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 6px 6px 10px #D21617;
+        background-color: #fff;
+        border-radius: 15px;
+        transition: 1s;
+        padding-top: 15px;
+    }
+
+    .user {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    h3 {
+        font-family: 'kdam Thmor Pro', sans-serif;
+        margin-top: 10px; 
+        color: black;  
+    }
+
+
+    h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        font-weight: bold;
+        
+    }
+
+    p {
+        font-family: 'kdam Thmor Pro', sans-serif;
+        text-align: center;
+        margin-top: 10px; 
+        color: black;
+    }
+
+    p {
+        display: block;
+        font-size: 1.07em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+    .star {
+        width: 19px;
+        margin-top: -10px;
+        background-color: #fff;
+
+    }
+
+    img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer-navigation {
+            display: block;
+        }        
+        
+        nav {
+            display: none;
+        }
+    
+        #banner {
+            background-position: 50%;
+        }
+    
+        #titulo-coments {
+            width: 100%;
+            margin-top: 20px;
+            
+        }
+        
+        .box-comentarios {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 85%;
+        column-gap: 30px;
+        margin-top: 10px;
+        margin-left: 23px;
+        
+        
+        }
+
+        .card {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 40px;
+        height: 320PX;
+        }
+
+        h3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            margin-left: 5%;  
+            margin-top: -10px;  
+        }
+
+        .user {
+            column-gap: 10px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .star {
+            width: 19px;
+            margin-top: -10px;
+            background-color: #fff;
+            
+            
+        }
+
+        .stars {
+            align-items: center;
+            margin-left: 5%;  
+            margin-top: -10px; 
+        }
+    
+        img {
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+        
+    }
